@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Dashboard from "./Components/Dashboard";
 import Login from "./Components/Login";
-import AppBar from "./Components/AppBar";
+import NavBar from './Components/NavBar';
 import "./App.css";
 
 class App extends Component {
@@ -13,22 +13,20 @@ class App extends Component {
     this.setState({ loggedIn: true });
   };
 
+ 
+
   render() {
     if (!this.state.loggedIn) {
       return (
         <div>
-          <AppBar />
-          <Login />
-          <button className="loginButton" onClick={this.onLogin}>
-            {" "}
-            Submit{" "}
-          </button>
+          <NavBar/>
+          <Login onLogin={this.onLogin}/>
         </div>
       );
     } else {
       return (
         <div>
-          <AppBar />
+          <NavBar />
           <Dashboard />
         </div>
       );

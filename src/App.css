@@ -1,26 +1,25 @@
-.cardrow{
+.cardrow {
   display: flex;
   justify-content: space-around;
   align-content: center;
 }
 
-
-
-
-.textForm{
+.loginField {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin-top: 16%;
 }
 
-.loginField{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.wholeThang{
+.wholeThang {
   display: flex;
   flex-direction: column;
 }
 
+.logButton{
+  width: 200px;
+}
+
+.textField{
+  width: 200px;
+}

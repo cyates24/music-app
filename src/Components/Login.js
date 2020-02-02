@@ -1,18 +1,17 @@
-import React, { Component } from "react";
-import LoginBox from '../Components/LoginBox'
+import React from "react";
+import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
 
-
-class Login extends Component {
-  render() {
-    return (
-      <form>
-        <div className="field">
-         <LoginBox />
-        </div>
-      </form>
-    );
-  }
-}
-
+const Login = ({ onLogin }) => {
+  return (
+    <form className="loginField" noValidate autoComplete="off">
+      <TextField className="textField" label="Username*" />
+      <TextField className="textField" label="Password*" />
+      <Button className = 'logButton'variant="contained" color="primary" onClick={onLogin}>
+        Log in
+      </Button>
+    </form>
+  );
+};
 
 export default Login;
