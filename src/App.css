@@ -4,8 +4,23 @@
   align-content: center;
 }
 
-.loginBox{
+
+
+
+.textForm{
   display: flex;
-  justify-content: space-around;
-  align-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.loginField{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wholeThang{
+  display: flex;
+  flex-direction: column;
+}
+

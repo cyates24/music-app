@@ -36,7 +36,7 @@ export default function ButtonAppBar() {
           <Typography variant="h6" className={classes.title}>
             My Music App
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">Log Out</Button>
         </Toolbar>
       </AppBar>
     </div>
